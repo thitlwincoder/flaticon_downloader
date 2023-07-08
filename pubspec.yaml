@@ -1,0 +1,14 @@
+name: flaticon_downloader
+description: Flaticon Image & Photo Downloader
+version: 0.0.1
+repository: https://github.com/thitlwincoder/flaticon_downloader
+
+environment:
+  sdk: ^3.0.5
+
+dependencies:
+  html: ^0.15.4
+  http: ^1.1.0
+
+dev_dependencies:
+  lints: ^2.0.0
