@@ -48,3 +48,9 @@ var result = await FlatIconDownloader.get('url', type: IconType.gif);
 <!-- multiple quality -->
 var multiResult = await FlatIconDownloader.getMulti('url');
 ```
+
+## Contribution
+
+Feel free to file an [issue](https://github.com/thitlwincoder/flaticon_downloader/issues/new) if you find a problem or make pull requests.
+
+All contributions are welcome :)
