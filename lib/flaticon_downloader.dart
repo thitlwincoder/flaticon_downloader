@@ -3,9 +3,11 @@ library flaticon_downloader;
 import 'package:html/parser.dart';
 import 'package:http/http.dart' as http;
 
+enum IconType { png, gif }
+
 class FlatIconDownloader {
   // get single link
-  static Future<String?> get(String url) async {
+  static Future<String?> get(String url, {IconType type = IconType.png}) async {
     // parse uri
     var uri = Uri.tryParse(url);
 
@@ -18,11 +20,24 @@ class FlatIconDownloader {
     // parse html body
     var body = parse(r.body);
 
-    // get image from meta
-    var meta = body.querySelector('meta[property="og:image"]');
+    // get detail
+    var detail = body.querySelector('#detail');
 
-    // return url from content
-    return meta?.attributes['content'];
+    // check null
+    if (detail == null) throw Exception('Invalid Url');
+
+    String? data;
+
+    // if [IconType.png] get png image
+    if (type == IconType.png) {
+      data = detail.attributes['data-png'];
+    } else {
+      // else get gif
+      data = detail.attributes['data-gif'];
+    }
+
+    // return url
+    return data;
   }
 
   // get multi link
