@@ -42,6 +42,9 @@ import 'package:flaticon_downloader/flaticon_downloader.dart';
 <!-- single quality -->
 var result = await FlatIconDownloader.get('url'); // add your url
 
+<!-- for gif url -->
+var result = await FlatIconDownloader.get('url', type: IconType.gif);
+
 <!-- multiple quality -->
-var multiResult = await FlatIconDownloader.getMulti('url'); // add your url
+var multiResult = await FlatIconDownloader.getMulti('url');
 ```
