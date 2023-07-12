@@ -4,4 +4,4 @@
 
 ## 0.0.2
 
-- Add support for Gif
+- Add support for Gif ([#1](https://github.com/thitlwincoder/flaticon_downloader/issues/1))
