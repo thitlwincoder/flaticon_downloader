@@ -16,7 +16,7 @@ In the `pubspec.yaml` of your flutter project, add the following dependency:
 ```yaml
 dependencies:
   ...
-  flaticon_downloader: ^0.0.1
+  flaticon_downloader: latest
 ```
 
 Next we need to install this
@@ -39,13 +39,13 @@ import 'package:flaticon_downloader/flaticon_downloader.dart';
 
 ```dart
 
-<!-- single quality -->
+// single quality
 var result = await FlatIconDownloader.get('url'); // add your url
 
-<!-- for gif url -->
+// for gif url
 var result = await FlatIconDownloader.get('url', type: IconType.gif);
 
-<!-- multiple quality -->
+// multiple quality
 var multiResult = await FlatIconDownloader.getMulti('url');
 ```
 
