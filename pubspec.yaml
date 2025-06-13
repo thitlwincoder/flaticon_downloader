@@ -4,11 +4,11 @@ version: 0.0.2
 repository: https://github.com/thitlwincoder/flaticon_downloader
 
 environment:
-  sdk: ^3.0.5
+  sdk: ^3.8.1
 
 dependencies:
-  html: ^0.15.4
-  http: ^1.1.0
+  html: ^0.15.6
+  http: ^1.4.0
 
 dev_dependencies:
-  lints: ^2.1.1
+  very_good_analysis: ^9.0.0
